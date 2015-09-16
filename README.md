@@ -18,6 +18,10 @@ Or install it yourself as:
 
     $ gem install rcachet
 
+## Versionning
+ * I'll try my best to follow http://semver.org/
+ * More specifically : MAJOR will follow cachet API major version (1 as of sept. 2015)
+
 ## Usage
 
 TODO: Write usage instructions here
