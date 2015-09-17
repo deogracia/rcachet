@@ -30,4 +30,13 @@ class RcachetServerTest < Minitest::Test
       assert_equal 0, server.componentsCount
     end
   end
+
+  def test_incidents
+    VCR.use_cassette("incidents") do
+      server = Rcachet::Server.new({base_uri: "http://localhost:8080", api_version: "v1"})
+
+      # All is there ?
+      assert_equal 0, server.incidentsCount
+    end
+  end
 end

@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:8080/api/v1/incidents
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 17 Sep 2015 22:16:21 GMT
+      Server:
+      - Apache/2.4.10 (Debian)
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - laravel_session=eyJpdiI6Ik1TZ01MR3c1cGtFUkRLWkRDa2FrbVE9PSIsInZhbHVlIjoib00ycnRrRmk5QVozTEpObXhMZjhjU1l3bVlRZmtOOG1mcW5wSUlYUHR1alhhbGx5TWd4M0ZsbUVhRSs4Nndod3h2NW41dGtsRE84U2N0a2JkQ1pNTmc9PSIsIm1hYyI6ImIzNjc4ZGQyNjNlY2QwNjM1NjYyMDAwNzAwODBmY2UxZjI2MDhjYzRkMzU4OTUxNWVlYThlMzQ4M2ViNzUyMDQifQ%3D%3D;
+        expires=Fri, 18-Sep-2015 00:16:21 GMT; Max-Age=7200; path=/; httponly
+      Content-Length:
+      - '152'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"pagination":{"total":0,"count":0,"per_page":"20","current_page":1,"total_pages":0,"links":{"next_page":null,"previous_page":null}}},"data":[]}'
+    http_version: 
+  recorded_at: Thu, 17 Sep 2015 22:16:21 GMT
+recorded_with: VCR 2.9.3
