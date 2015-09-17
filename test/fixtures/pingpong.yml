@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:8080/api/v1/ping
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 17 Sep 2015 21:31:09 GMT
+      Server:
+      - Apache/2.4.10 (Debian)
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - laravel_session=eyJpdiI6Im1id1wvdlVtd01DeDJKeXV6VEJ0QTdRPT0iLCJ2YWx1ZSI6Im9WVUl6Nk9xdVwvZ24wZDRKeVduUWxrVFh4eHRFMDdhQTlmblBrTFhValVtcDhGaFJ4clNYVjc0cEtzZ2NyK0VKQ2xpSlVYRGlRbVwvNjF6TkdKcHBvSmc9PSIsIm1hYyI6Ijg1MjhiODFmODEyNDFjMjJjNDUwZGQwMDAwODE1NTI4OTAxN2ZlNDY2MjI5NGU5YjAxYjcxMzc0YTk3MGJkOTYifQ%3D%3D;
+        expires=Thu, 17-Sep-2015 23:31:09 GMT; Max-Age=7200; path=/; httponly
+      Content-Length:
+      - '16'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"data":"Pong!"}'
+    http_version: 
+  recorded_at: Thu, 17 Sep 2015 21:31:10 GMT
+recorded_with: VCR 2.9.3
