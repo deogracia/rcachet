@@ -5,13 +5,14 @@ module Rcachet
   class Server
 
     # TODO: revoir le choix "attr_accessor" car ils ne sont aps vraiment appellé à l'exterieur
-    attr_accessor :base_uri, :api_version, :components, :incidents
+    attr_accessor :base_uri, :api_version, :components, :incidents, :metrics
 
     def initialize(attributes)
       @base_uri    = attributes[:base_uri]
       @api_version = attributes[:api_version]
       @components  = nil
       @incidents   = nil
+      @metrics     = nil
     end
 
     def ping
@@ -35,6 +36,13 @@ module Rcachet
       @incidents["meta"]["pagination"]["count"]
     end
 
+    def metricsCount
+      if !@metrics then
+        cachetGetmetrics
+      end
+      @metrics["meta"]["pagination"]["count"]
+    end
+
     private
 
     # get from cachet server
@@ -46,6 +54,11 @@ module Rcachet
     def cachetGetIncidents
       response = Faraday.get("#{@base_uri}/api/#{@api_version}/incidents")
       @incidents = JSON.parse(response.body)
+    end
+
+    def cachetGetmetrics
+      response = Faraday.get("#{@base_uri}/api/#{@api_version}/metrics")
+      @metrics = JSON.parse(response.body)
     end
   end
 end
