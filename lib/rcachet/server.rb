@@ -25,28 +25,28 @@ module Rcachet
     end
 
     def componentsCount
-      if !@components then
+      if !@components
         cachetGetComponents
       end
       @components["meta"]["pagination"]["count"]
     end
 
     def incidentsCount
-      if !@incidents then
+      if !@incidents
         cachetGetIncidents
       end
       @incidents["meta"]["pagination"]["count"]
     end
 
     def metricsCount
-      if !@metrics then
-        cachetGetmetrics
+      if !@metrics
+        cachetGetMetrics
       end
       @metrics["meta"]["pagination"]["count"]
     end
 
     def subscribersCount
-      if !@subscribers then
+      if !@subscribers
         cachetGetSubscribers
       end
       @subscribers["meta"]["pagination"]["count"]
@@ -65,7 +65,7 @@ module Rcachet
       @incidents = JSON.parse(response.body)
     end
 
-    def cachetGetmetrics
+    def cachetGetMetrics
       response = Faraday.get("#{@base_uri}/api/#{@api_version}/metrics")
       @metrics = JSON.parse(response.body)
     end
