@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:8080/api/v1/subscribers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Content-Type:
+      - application/json
+      X-Cachet-Token:
+      - SZGlZQOnG4gz1sGtua1Y
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 18 Sep 2015 16:13:54 GMT
+      Server:
+      - Apache/2.4.10 (Debian)
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - laravel_session=eyJpdiI6Ilo4ZjFwMWw3TzZoNnJvb05seVZUanc9PSIsInZhbHVlIjoiWWlrQW0zNDBGdG5zVHBtcjhxM2Q2MmdSaVhITVNRM2hqZlEwQ2hhR25QbUE0TGQydUUwOHdMYzBRZ2x4SVRFWE9oSWZWc1crSk81ZHFZTThxbkczd2c9PSIsIm1hYyI6ImI2ZWUwODVmNGZiMmM1NWNlMjYwOGMyZGFjYjM1MjJmN2MzOTkxNTdkM2Q4Y2Q4NDMwZTRjZDMyNWMzMTI2NzUifQ%3D%3D;
+        expires=Fri, 18-Sep-2015 18:13:54 GMT; Max-Age=7200; path=/; httponly
+      Content-Length:
+      - '152'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"pagination":{"total":0,"count":0,"per_page":"20","current_page":1,"total_pages":0,"links":{"next_page":null,"previous_page":null}}},"data":[]}'
+    http_version: 
+  recorded_at: Fri, 18 Sep 2015 16:13:54 GMT
+recorded_with: VCR 2.9.3
