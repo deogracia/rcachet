@@ -19,14 +19,14 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 17 Sep 2015 21:49:12 GMT
+      - Sat, 19 Sep 2015 13:49:30 GMT
       Server:
       - Apache/2.4.10 (Debian)
       Cache-Control:
       - no-cache
       Set-Cookie:
-      - laravel_session=eyJpdiI6IlhFcnBmaWZtRXNZb2FIVWhNbVJqcnc9PSIsInZhbHVlIjoiZzlIcVQ4bkZxVDhGdUtCV1lGclhaOFMwUysyVXhWa0Erb1wvaTc5bk5hazYzczZoQWxcL1lSbUd1dXM4MTJpMVk2XC9OVDBVUGFhbjdzN0VpZ1oyXC9oK0ZnPT0iLCJtYWMiOiJhNDhhYWY1ZTg0ZTc3MDE4OTBkZWVhM2RlZjA4OTZiMjMxODkzZmY2Zjc1MzI1NzVlMWJhZmQ1OTE3NTA4YzJmIn0%3D;
-        expires=Thu, 17-Sep-2015 23:49:12 GMT; Max-Age=7200; path=/; httponly
+      - laravel_session=eyJpdiI6ImxDbmRiNGU0QjVqQkNOUWIxdDY5bHc9PSIsInZhbHVlIjoiMW0xUEVkYlViOFh0QXpKZXpObXNqdUpkNEJpNVZzSkxDQ0FNWTh6M1J1a0ExcHhZZ2cxXC9iQWxsMVJcL3ErQTlCeTVXWHFpcXFvRVVLMjFlQnFVVVVtQT09IiwibWFjIjoiODM1YjI5MzQ3YjRhY2U3ZjFmMjY5ZDAwODg0N2NjZjRjMzNhOGUxOGM0N2U3NmE0MTIyZGE4NDFhNjE5ZDE5YiJ9;
+        expires=Sat, 19-Sep-2015 15:49:30 GMT; Max-Age=7200; path=/; httponly
       Content-Length:
       - '152'
       Content-Type:
@@ -35,5 +35,47 @@ http_interactions:
       encoding: UTF-8
       string: '{"meta":{"pagination":{"total":0,"count":0,"per_page":"20","current_page":1,"total_pages":0,"links":{"next_page":null,"previous_page":null}}},"data":[]}'
     http_version: 
-  recorded_at: Thu, 17 Sep 2015 21:49:12 GMT
+  recorded_at: Sat, 19 Sep 2015 13:49:30 GMT
+- request:
+    method: post
+    uri: http://localhost:8080/api/v1/components
+    body:
+      encoding: UTF-8
+      string: '{"name":"component_1","description":"description component 1","status":1}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Content-Type:
+      - application/json
+      X-Cachet-Token:
+      - SZGlZQOnG4gz1sGtua1Y
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 19 Sep 2015 13:49:30 GMT
+      Server:
+      - Apache/2.4.10 (Debian)
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - laravel_session=eyJpdiI6IjhmSkRQV1wvbFZBYTJCQTJmZ1lnR0tBPT0iLCJ2YWx1ZSI6Ijh1cG5ZSmZUd0tOczZzSGpLNDZxU3Vsb1wvVHZKWVFrQnhmSXhZOFFIMUdiZ1lDVGp1bWdkOWxxbG5uanBaZ2ZpNldJaFA3WDUwYnRJUDlLYUVCRXJYQT09IiwibWFjIjoiY2I3NjRlMmEwYWU4MjA1ZmMzMGNiYTc0NDhlOTljODU1MTE5MzU2NmIyMDcwZDlmOGNiM2I5ZmRiY2U2Y2M2ZCJ9;
+        expires=Sat, 19-Sep-2015 15:49:30 GMT; Max-Age=7200; path=/; httponly
+      Content-Length:
+      - '228'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"data":{"order":0,"group_id":0,"description":"description component
+        1","link":"","name":"component_1","status":"1","updated_at":"2015-09-19 15:49:30","created_at":"2015-09-19
+        15:49:30","id":1,"status_name":"Op\u00e9rationnel"}}'
+    http_version: 
+  recorded_at: Sat, 19 Sep 2015 13:49:30 GMT
 recorded_with: VCR 2.9.3

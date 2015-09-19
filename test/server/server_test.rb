@@ -24,10 +24,16 @@ class RcachetServerTest < Minitest::Test
 
   def test_components
     VCR.use_cassette('components') do
-      server = Rcachet::Server.new({base_uri: "http://localhost:8080", api_version: "v1"})
+      server = Rcachet::Server.new({base_uri: "http://localhost:8080", api_version: "v1", api_token: "SZGlZQOnG4gz1sGtua1Y"})
+
+      component = {name: "component_1",
+                   description: "description component 1",
+                   status: 1
+      }
 
       # All is there ?
       assert_equal 0, server.componentsCount
+      assert_equal 1, server.componentAdd(component)
     end
   end
 
