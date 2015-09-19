@@ -57,7 +57,6 @@ class RcachetServerTest < Minitest::Test
 
   def test_subscribers
     VCR.use_cassette("subscribers") do
-      # TODO: I need to automate the 'api_token' genration from the fresh install
       server = Rcachet::Server.new({base_uri: "http://localhost:8080", api_version: "v1", api_token: "SZGlZQOnG4gz1sGtua1Y"})
 
       # All is there ?
