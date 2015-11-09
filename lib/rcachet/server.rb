@@ -17,6 +17,8 @@ module Rcachet
       @api_token   = attributes[:api_token] ? attributes[:api_token] : nil
     end
 
+    # Test that cachet is up
+    # @return 'Pong!'
     def ping
       response = Faraday.get("#{@base_uri}/api/#{@api_version}/ping")
       attributes = JSON.parse(response.body)
@@ -24,6 +26,8 @@ module Rcachet
       attributes["data"]
     end
 
+    # Returns the number of components
+    # @return
     def componentsCount
       if !@components
         cachetGetComponents
