@@ -39,6 +39,12 @@ module Rcachet
       cachetSecurePut("components", component)
     end
 
+    # return the components values in JSON
+    # @return JSON
+    def componentGetById(componentId)
+      component = cachetGetComponentById(componentId)
+    end
+
     def incidentsCount
       if !@incidents
         cachetGetIncidents
@@ -66,6 +72,12 @@ module Rcachet
     def cachetGetComponents
       response = Faraday.get("#{@base_uri}/api/#{@api_version}/components")
       @components = JSON.parse(response.body)
+    end
+
+    # get one component
+    def cachetGetComponentById(componentId)
+      response = Faraday.get("#{@base_uri}/api/#{@api_version}/components/#{componentId}")
+      component = JSON.parse(response.body)
     end
 
     def cachetGetIncidents

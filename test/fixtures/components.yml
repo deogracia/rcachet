@@ -78,4 +78,156 @@ http_interactions:
         15:49:30","id":1,"status_name":"Op\u00e9rationnel"}}'
     http_version: 
   recorded_at: Sat, 19 Sep 2015 13:49:30 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/api/v1/components/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Nov 2015 18:45:58 GMT
+      Server:
+      - Apache/2.4.10 (Debian)
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - laravel_session=eyJpdiI6Imw5cSt6NkVDbXFQOXRHa3dTMm9WR3c9PSIsInZhbHVlIjoiVzlZK2tkdytFTHdsTW00Y2piS0duaUlsNXVCOVA3aDcxVVF2M3BtY0pVcG5OUzdTRVFYWkRJWDROZVwvYlBta1IyVXNyc1JneXdESVwvTTN2TkpLRVZEZz09IiwibWFjIjoiOWQ2NTQ3YWJiNTkxOThkZGNlYmZiYjM2OWJiMjljNmY3Mjk3YmE4MThkNDI1YTMxYzM4N2JjOTA5Mzk2Y2Y5YiJ9;
+        expires=Tue, 10-Nov-2015 20:45:58 GMT; Max-Age=7200; path=/; httponly
+      Content-Length:
+      - '252'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","name":"component_1","description":"description component
+        1","link":"","status":"1","order":"0","group_id":"0","created_at":"2015-11-10
+        18:48:55","updated_at":"2015-11-10 18:48:55","deleted_at":null,"status_name":"Op\u00e9rationnel"}}'
+    http_version: 
+  recorded_at: Tue, 10 Nov 2015 18:45:58 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/api/v1/components/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Nov 2015 18:45:58 GMT
+      Server:
+      - Apache/2.4.10 (Debian)
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - laravel_session=eyJpdiI6IkoxZ1hiczZobGRmSnF5UVFtam9vaGc9PSIsInZhbHVlIjoiZGcxWmRrdXBjRkNWdlZmQWRWWFdKVzMyVEFyd2NXRkVrMm83QWU3UXpYK1FKWmJOYWNSdXRtQlZxY05jaXVJSHlxN29UajBRclFNSWhcL3NoR2IxcXpnPT0iLCJtYWMiOiI4MWViMzZjYzJhZjgzMDExYzdkMzhlMWEyNDg3OWI4NDNmYjMwYzYyMmM3MjJmYzQ1NGE3NmVlZWJjZTM1MDY0In0%3D;
+        expires=Tue, 10-Nov-2015 20:45:58 GMT; Max-Age=7200; path=/; httponly
+      Content-Length:
+      - '252'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","name":"component_1","description":"description component
+        1","link":"","status":"1","order":"0","group_id":"0","created_at":"2015-11-10
+        18:48:55","updated_at":"2015-11-10 18:48:55","deleted_at":null,"status_name":"Op\u00e9rationnel"}}'
+    http_version: 
+  recorded_at: Tue, 10 Nov 2015 18:45:58 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/api/v1/components/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Nov 2015 18:45:58 GMT
+      Server:
+      - Apache/2.4.10 (Debian)
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - laravel_session=eyJpdiI6Ikd5UDllZ2QxUGpxclB4VXhrTTRvcEE9PSIsInZhbHVlIjoiSGZLWVo2em96YzRsS1hTZDJ3QU9jNWl1eVIyK1I3dk5IMGpYZDdDdG1LVThCck9pRDNDMTk3ekE0RkFWcXh2Z0RZOHhVSTlaV2VPa29SeEwrUFZUd2c9PSIsIm1hYyI6ImZhZjUwZGJiYjQwMWZhYTk4MmY2NzIwYWY2MzM4NDNmNjhlNGIyZTg4MDNjYzVkYjA3ZjgyNjljYTQ3OGFiZjUifQ%3D%3D;
+        expires=Tue, 10-Nov-2015 20:45:58 GMT; Max-Age=7200; path=/; httponly
+      Content-Length:
+      - '252'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","name":"component_1","description":"description component
+        1","link":"","status":"1","order":"0","group_id":"0","created_at":"2015-11-10
+        18:48:55","updated_at":"2015-11-10 18:48:55","deleted_at":null,"status_name":"Op\u00e9rationnel"}}'
+    http_version: 
+  recorded_at: Tue, 10 Nov 2015 18:45:58 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/api/v1/components/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Nov 2015 18:45:58 GMT
+      Server:
+      - Apache/2.4.10 (Debian)
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - laravel_session=eyJpdiI6ImcrbkZUbGtxcjRNUjdYTG1IcTE1N2c9PSIsInZhbHVlIjoibFZcL2R0OVBaSzBFWGZUOWJFUlwvOXhHbXU5cHFNREhDSFwvTkZoUGQ3M2hSOFZBRHVMVlV6UWZ0UWRBZWhxUW9hUUFCSFVsTW1rXC9YQTlBTG56dFdMVGNBPT0iLCJtYWMiOiI5OGJhNGIxMzA4MTVlYWY5NzU5NmQ4ZGNjYjg1NTlhMWFhNzExNzA1OGJjZjA0YjQzZDc2NGE4MDlkMjZhMjcwIn0%3D;
+        expires=Tue, 10-Nov-2015 20:45:58 GMT; Max-Age=7200; path=/; httponly
+      Content-Length:
+      - '252'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","name":"component_1","description":"description component
+        1","link":"","status":"1","order":"0","group_id":"0","created_at":"2015-11-10
+        18:48:55","updated_at":"2015-11-10 18:48:55","deleted_at":null,"status_name":"Op\u00e9rationnel"}}'
+    http_version: 
+  recorded_at: Tue, 10 Nov 2015 18:45:58 GMT
 recorded_with: VCR 2.9.3

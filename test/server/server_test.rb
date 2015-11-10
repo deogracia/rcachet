@@ -34,6 +34,13 @@ class RcachetServerTest < Minitest::Test
       # All is there ?
       assert_equal 0, server.componentsCount
       assert_equal 1, server.componentAdd(component)
+
+      # Test if the first component (id = 1) is there and equal to my "component"
+      assert_equal "1", server.componentGetById("1")["data"]["id"]
+      assert_equal "component_1", server.componentGetById("1")["data"]["name"]
+      assert_equal "description component 1", server.componentGetById("1")["data"]["description"]
+      assert_equal "1", server.componentGetById("1")["data"]["status"]
+
     end
   end
 
