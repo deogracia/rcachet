@@ -36,7 +36,7 @@ module Rcachet
     end
 
     def componentAdd(component)
-      cachetSecurePut("components", component)
+      cachetSecurePost("components", component)
     end
 
     # return the components values in JSON
@@ -61,7 +61,7 @@ module Rcachet
     # add a new incident
     # @return incident ID
     def incidentsAdd(newIncident)
-      cachetSecurePut('incidents', newIncident)
+      cachetSecurePost('incidents', newIncident)
     end
 
     def metricsCount
@@ -122,7 +122,7 @@ module Rcachet
       end
     end
 
-    def cachetSecurePut(component, attributes)
+    def cachetSecurePost(component, attributes)
       success = false
 
       conn = Faraday.new(:url => "#{@base_uri}")
