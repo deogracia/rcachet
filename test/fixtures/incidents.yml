@@ -36,4 +36,46 @@ http_interactions:
       string: '{"meta":{"pagination":{"total":0,"count":0,"per_page":"20","current_page":1,"total_pages":0,"links":{"next_page":null,"previous_page":null}}},"data":[]}'
     http_version: 
   recorded_at: Thu, 17 Sep 2015 22:16:21 GMT
+- request:
+    method: post
+    uri: http://localhost:8080/api/v1/incidents
+    body:
+      encoding: UTF-8
+      string: '{"name":"incident_01","message":"message_incident_01","status":1,"visible":1,"notify":false}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Content-Type:
+      - application/json
+      X-Cachet-Token:
+      - SZGlZQOnG4gz1sGtua1Y
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Nov 2015 13:12:09 GMT
+      Server:
+      - Apache/2.4.10 (Debian)
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - laravel_session=eyJpdiI6IlBhYVR0ODB2RVwvelY5UVhcL0J4WG9ZQT09IiwidmFsdWUiOiJyXC96XC9UNUgxa1QzeHpLQ3cxa2Q4aHRxV0IrZ3dheWR6Y2Mza0l0SzBDWEpSOWh1cFZcLzFnTDFSblBpNVdZS016cGFuRjNkcmdBbDZSYjg3eUZnV2pxUT09IiwibWFjIjoiNmQ3YzU0ZDJiYTJlN2U5YWMwOWUzN2UxN2YyOGZhMTg3MDU4YWIzZWU2Njc1ZDdiNmY1MzMwYWE2NTdiNzU1MSJ9;
+        expires=Wed, 11-Nov-2015 15:12:09 GMT; Max-Age=7200; path=/; httponly
+      Content-Length:
+      - '241'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"data":{"name":"incident_01","message":"message_incident_01","status":"1","visible":1,"updated_at":"2015-11-11
+        14:12:09","created_at":"2015-11-11 14:12:09","id":1,"human_status":"Enqu\u00eate
+        en cours","scheduled_at":"2015-11-11 14:12:09"}}'
+    http_version: 
+  recorded_at: Wed, 11 Nov 2015 13:12:36 GMT
 recorded_with: VCR 2.9.3

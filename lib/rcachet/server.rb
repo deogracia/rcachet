@@ -52,6 +52,12 @@ module Rcachet
       @incidents["meta"]["pagination"]["count"]
     end
 
+    # add a new incident
+    # @return incident ID
+    def incidentsAdd(newIncident)
+      cachetSecurePut('incidents', newIncident)
+    end
+
     def metricsCount
       if !@metrics
         cachetGetMetrics

@@ -46,10 +46,21 @@ class RcachetServerTest < Minitest::Test
 
   def test_incidents
     VCR.use_cassette("incidents") do
-      server = Rcachet::Server.new({base_uri: "http://localhost:8080", api_version: "v1"})
+      server = Rcachet::Server.new({base_uri: "http://localhost:8080", api_version: "v1", api_token: "SZGlZQOnG4gz1sGtua1Y"})
+
+      incidentTest = {
+                        name: 'incident_01',
+                        message: 'message_incident_01',
+                        status: 1,
+                        visible: 1,
+                        notify: false
+      }
 
       # All is there ?
       assert_equal 0, server.incidentsCount
+
+      # Add an incident
+      assert_equal 1, server.incidentsAdd(incidentTest)
     end
   end
 
