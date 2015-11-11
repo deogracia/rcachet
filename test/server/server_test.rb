@@ -61,6 +61,13 @@ class RcachetServerTest < Minitest::Test
 
       # Add an incident
       assert_equal 1, server.incidentsAdd(incidentTest)
+
+      # Get incident N°1
+      assert_equal 'incident_01',         server.incidentsGetById('1')['data']['name']
+      assert_equal 'message_incident_01', server.incidentsGetById('1')['data']['message']
+      assert_equal '1',                     server.incidentsGetById('1')['data']['status']
+      assert_equal 1,                     server.incidentsGetById('1')['data']['visible']
+
     end
   end
 

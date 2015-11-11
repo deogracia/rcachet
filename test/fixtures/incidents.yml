@@ -78,4 +78,156 @@ http_interactions:
         en cours","scheduled_at":"2015-11-11 14:12:09"}}'
     http_version: 
   recorded_at: Wed, 11 Nov 2015 13:12:36 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/api/v1/incidents/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Nov 2015 13:56:58 GMT
+      Server:
+      - Apache/2.4.10 (Debian)
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - laravel_session=eyJpdiI6ImxYTlhQV3ZHeTlVa3NhaVE5K3FmOUE9PSIsInZhbHVlIjoiSWtSMmtXOURMamV0TWxHNnhKc2lxY1FKOVEzb1pmTHlTZ3J2ZEN6bVlZbk9yek41bHJTVUVnbUVlUERzSTRPdU55a1RWQitFd0lBUm10R2xmbXdTUVE9PSIsIm1hYyI6IjkzYzlhOTZkMjJmYjVjZDllNmY2OGE4MjIxNDViM2Y3ZDA3ZWUyMTMyMjk3YzNmOTUzNzU3MzhhYWQ0ZGYyN2YifQ%3D%3D;
+        expires=Wed, 11-Nov-2015 15:56:58 GMT; Max-Age=7200; path=/; httponly
+      Content-Length:
+      - '280'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","component_id":"0","name":"incident_01","status":"1","visible":1,"message":"message_incident_01","scheduled_at":"2015-11-11
+        14:12:09","created_at":"2015-11-11 14:12:09","updated_at":"2015-11-11 14:12:09","deleted_at":null,"human_status":"Enqu\u00eate
+        en cours"}}'
+    http_version: 
+  recorded_at: Wed, 11 Nov 2015 13:57:24 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/api/v1/incidents/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Nov 2015 13:56:58 GMT
+      Server:
+      - Apache/2.4.10 (Debian)
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - laravel_session=eyJpdiI6ImwycEZGTDNtNDFmODhWUHhGcnp5OWc9PSIsInZhbHVlIjoiY3N4SFZoQTFnWlF3elFGN1RkOTYwZWt6RFY5M3BGK0JcL1pEVmo2cjl4dmxITFJIWCtFdFpWYm9ZUGppWXNkUHRNNlFOa2t5TXVPbDJwM2I4bWErMm5RPT0iLCJtYWMiOiI2MDk2ZjAxODUzZmJkMjNhYjRhOWYwNDkyYTllYjVhOWM4ZTIwNDc0OGVkOWEzM2U5MGJiNzA0ZGVhOTdhMTBiIn0%3D;
+        expires=Wed, 11-Nov-2015 15:56:58 GMT; Max-Age=7200; path=/; httponly
+      Content-Length:
+      - '280'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","component_id":"0","name":"incident_01","status":"1","visible":1,"message":"message_incident_01","scheduled_at":"2015-11-11
+        14:12:09","created_at":"2015-11-11 14:12:09","updated_at":"2015-11-11 14:12:09","deleted_at":null,"human_status":"Enqu\u00eate
+        en cours"}}'
+    http_version: 
+  recorded_at: Wed, 11 Nov 2015 13:57:24 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/api/v1/incidents/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Nov 2015 13:56:58 GMT
+      Server:
+      - Apache/2.4.10 (Debian)
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - laravel_session=eyJpdiI6ImVqRnpmZjV6VkVlS3RzNFV4VXJkanc9PSIsInZhbHVlIjoicHZMc2FFSXdBZ09VUzY1MXFMS1dlVXcxVzUreFRrMmlLOGxWenBGXC9YZ0txbDQrMmtPQkFjbHdWYkxhOXl4XC9oalV2WkxZRHRmTU5cL090VnFwcXlRN1E9PSIsIm1hYyI6IjZkYjQ4NDY5YmZjNTM4MDExYWRjZjMxNmI3ODQzYTBhODM2NzFmYjhjN2QyYTQxNjY3ZDdiZjEwZjlhZDRhNWYifQ%3D%3D;
+        expires=Wed, 11-Nov-2015 15:56:58 GMT; Max-Age=7200; path=/; httponly
+      Content-Length:
+      - '280'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","component_id":"0","name":"incident_01","status":"1","visible":1,"message":"message_incident_01","scheduled_at":"2015-11-11
+        14:12:09","created_at":"2015-11-11 14:12:09","updated_at":"2015-11-11 14:12:09","deleted_at":null,"human_status":"Enqu\u00eate
+        en cours"}}'
+    http_version: 
+  recorded_at: Wed, 11 Nov 2015 13:57:24 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/api/v1/incidents/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Nov 2015 13:56:58 GMT
+      Server:
+      - Apache/2.4.10 (Debian)
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - laravel_session=eyJpdiI6IjdOeGE2aGNmZWVZRTVnNkZiendSc0E9PSIsInZhbHVlIjoiK2RoVnBnb0xRZ1RzXC9MOHBZQ2dGdEQwaDRHV2pXNkZQMG5sYXlGbHAxdnI3WU5QRkltUFZPZkZqUUNNb01jWk8xN0hKSEZCdTZzK3FURThvRjRJTXB3PT0iLCJtYWMiOiJiNmFjOGQ5YTBjNzBlM2JhYTUxMzI5M2EyYTUzOTlmMDFkYzY0ZmQzNzM4NjlkNDcxNDE3NDhlZjUxMDliNTAxIn0%3D;
+        expires=Wed, 11-Nov-2015 15:56:58 GMT; Max-Age=7200; path=/; httponly
+      Content-Length:
+      - '280'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","component_id":"0","name":"incident_01","status":"1","visible":1,"message":"message_incident_01","scheduled_at":"2015-11-11
+        14:12:09","created_at":"2015-11-11 14:12:09","updated_at":"2015-11-11 14:12:09","deleted_at":null,"human_status":"Enqu\u00eate
+        en cours"}}'
+    http_version: 
+  recorded_at: Wed, 11 Nov 2015 13:57:24 GMT
 recorded_with: VCR 2.9.3

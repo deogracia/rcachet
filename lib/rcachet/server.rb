@@ -52,6 +52,12 @@ module Rcachet
       @incidents["meta"]["pagination"]["count"]
     end
 
+    # get the full json of an incident
+    # @return JSON
+    def incidentsGetById(incidentId)
+      incident = cachetGetIncidentById(incidentId)
+    end
+
     # add a new incident
     # @return incident ID
     def incidentsAdd(newIncident)
@@ -89,6 +95,13 @@ module Rcachet
     def cachetGetIncidents
       response = Faraday.get("#{@base_uri}/api/#{@api_version}/incidents")
       @incidents = JSON.parse(response.body)
+    end
+
+    # return the full json of an incident Id
+    # @return JSON
+    def cachetGetIncidentById(incidentId)
+      response = Faraday.get("#{@base_uri}/api/#{@api_version}/incidents/#{incidentId}")
+      incident = JSON.parse(response.body)
     end
 
     def cachetGetMetrics
