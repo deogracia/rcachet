@@ -64,6 +64,13 @@ module Rcachet
       cachetSecurePost('incidents', newIncident)
     end
 
+    # Update an incident
+    # Return the full incident JSon updated
+    # @return JSON
+    def incidentsUpdate(incidentId, updates)
+      cachetSecurePut('incidents', incidentId, updates)
+    end
+
     def metricsCount
       if !@metrics
         cachetGetMetrics
@@ -140,6 +147,21 @@ module Rcachet
       end
 
       return success
+    end
+
+    def cachetSecurePut(component, id, updates)
+      success = false
+
+      conn = Faraday.new(:url => "#{@base_uri}")
+
+      response = conn.put do |req|
+        req.url "/api/#{@api_version}/#{component}/#{id}"
+        req.headers['Content-Type']   = 'application/json'
+        req.headers['X-Cachet-Token'] = @api_token
+        req.body                      = updates.to_json
+      end
+
+      responseData = JSON.parse(response.body)
     end
   end
 end
