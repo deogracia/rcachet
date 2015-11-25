@@ -45,7 +45,7 @@ class RcachetServerTest < Minitest::Test
   end
 
   def test_incidents
-    VCR.use_cassette('incidents', :record => :new_episodes) do
+    VCR.use_cassette('incidents') do
       server = Rcachet::Server.new({base_uri: "http://localhost:8080", api_version: "v1", api_token: "SZGlZQOnG4gz1sGtua1Y"})
 
       incidentTest = {
@@ -81,6 +81,10 @@ class RcachetServerTest < Minitest::Test
       assert_equal 'message_incident_01', incident['data']['message']
       assert_equal '2',                   incident['data']['status']
       assert_equal 1,                     incident['data']['visible']
+
+      # Delette incident N°1
+      assert_equal 0, server.incidentDelete(1)
+      assert_equal 0, server.incidentsCount
 
     end
   end

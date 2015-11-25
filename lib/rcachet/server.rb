@@ -71,6 +71,11 @@ module Rcachet
       cachetSecurePut('incidents', incidentId, updates)
     end
 
+    # Delete an incident
+    def incidentDelete(incidentId)
+      cachetSecureDelete('incidents', incidentId)
+    end
+
     def metricsCount
       if !@metrics
         cachetGetMetrics
@@ -162,6 +167,27 @@ module Rcachet
       end
 
       responseData = JSON.parse(response.body)
+    end
+
+    # return 0 si OK
+    # @return 0 if OK
+    def cachetSecureDelete(component, incidentId)
+      success = 1
+
+      conn = Faraday.new(:url => "#{@base_uri}")
+
+      response = conn.delete do |req|
+        req.url "/api/#{@api_version}/#{component}/#{incidentId}"
+        req.headers['Content-Type']   = 'application/json'
+        req.headers['X-Cachet-Token'] = @api_token
+        req.body                      = '{}'
+      end
+
+      if response.status == 204
+        success = 0
+      end
+
+      return success
     end
   end
 end
