@@ -7,7 +7,7 @@ Ruby wrapper to [cachet](https://cachethq.io/) api
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rcachet'
+gem 'rcachet', '~> 0.1'
 ```
 
 And then execute:
